@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,11 +11,10 @@ double calcEntropy(string str, int size, int start, int end)
         if (str[i] == '1')
             c++;
     }
-    double probability = (double) c/size;
+    double probability = (double)c / size;
     double p = probability / size;
     return -((p)*log2f(p));
 }
-
 
 int main()
 {
@@ -27,7 +26,6 @@ int main()
     cout << "enter the window size : ";
     cin >> win_size;
 
-
     int objects_taken = 0;
     for (int i = 0; i < str.size(); i++)
     {
@@ -36,7 +34,6 @@ int main()
 
         objects_taken++;
     }
-
 
     int end = win_size;
     for (int i = 0; i < objects_taken; i++)
