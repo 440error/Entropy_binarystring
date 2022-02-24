@@ -1,3 +1,4 @@
+// shanon entroy using csv file with no of entropy provided by user
 #include <bits/stdc++.h>
 using namespace std;
 
