@@ -1,4 +1,3 @@
-// shanon entroy using csv file with no of entropy provided by user
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -23,7 +22,8 @@ double calculateEntropy(string str, int start, int end, int window_size)
 }
 int main()
 {
-    string str="" ;
+
+    string str = "";
     ifstream Input_value;
     Input_value.open("input.csv");
     cout << "the string is: ";
@@ -31,32 +31,27 @@ int main()
     while (Input_value.eof() == 0)
     {
         Input_value >> str;
-        // getline(Input_value, ;str)
-        cout << "here is it " << str << endl;
+        cout << str << endl;
         Input_value.close();
     }
     cout << "size of string " << str.size() << endl;
-       
 
     ofstream output;
     output.open("Output.csv");
 
-
     int no_of_entropies;
     int window_size;
+
     cout << endl
          << "the no.of entropies you want : ";
-
-
     cin >> no_of_entropies;
     cout << endl;
+
     window_size = str.size() - (no_of_entropies - 1);
     cout << "window size will be " << window_size << endl;
-
-    
     for (int i = 0; i < no_of_entropies; i++)
     {
-        output << "entropy " << i + 1 << "is " << calculateEntropy(str, i, window_size + i, window_size) << endl;
+        output << "entropy " << i + 1 << " is " << calculateEntropy(str, i, window_size + i, window_size) << endl;
     }
 
     output.close();
