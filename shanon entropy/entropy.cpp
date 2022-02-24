@@ -1,3 +1,4 @@
+// shanon entropy by taking string and window size at runtime by the user
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
