@@ -67,7 +67,7 @@ int main()
         input_value.close();
     }
     ofstream output_value;
-    output_value.open("outt.csv");
+    output_value.open("out.csv");
     double window_size;
     cout << "enter window size ";
     cin >> window_size;
