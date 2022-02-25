@@ -31,6 +31,7 @@ int main()
     while (Input_value.eof() == 0)
     {
         Input_value >> str;
+        // getline(Input_value,str) ;
         cout << str << endl;
         Input_value.close();
     }
