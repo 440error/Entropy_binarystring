@@ -25,7 +25,7 @@ int main()
 
     string str = "";
     ifstream Input_value;
-    Input_value.open("input.csv");
+    Input_value.open("shanon_in.csv");
     cout << "the string is: ";
 
     while (Input_value.eof() == 0)
@@ -37,7 +37,7 @@ int main()
     cout << "size of string " << str.size() << endl;
 
     ofstream output;
-    output.open("Output.csv");
+    output.open("shanon_out.csv");
 
     int no_of_entropies;
     int window_size;
