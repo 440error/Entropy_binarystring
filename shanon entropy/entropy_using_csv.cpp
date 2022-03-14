@@ -50,6 +50,7 @@ int main()
 
     window_size = str.size() - (no_of_entropies - 1);
     cout << "window size will be " << window_size << endl;
+    
     for (int i = 0; i < no_of_entropies; i++)
     {
         output << "entropy " << i + 1 << " is " << calculateEntropy(str, i, window_size + i, window_size) << endl;
